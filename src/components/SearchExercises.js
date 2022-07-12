@@ -75,7 +75,6 @@ function SearchExercises() {
         </Box>
         <Box sx={{ position: 'relative', width: '100%', p: '20px'}}>
         <HorizontalScrollbar data={bodyPart}/>
-
         </Box>
         </Stack>
     );
