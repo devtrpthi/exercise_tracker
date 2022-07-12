@@ -1,6 +1,6 @@
 import React from "react";
 
-function Details() {
+function ExerciseVideos() {
     return(
         <div>
             exercise videos
@@ -8,4 +8,4 @@ function Details() {
     );
 }
 
-export default Details;
+export default ExerciseVideos;
