@@ -2,7 +2,6 @@ import React,{useState, useEffect} from "react";
 import { Pagination } from "@mui/material";
 import {Box,Stack, Typography} from '@mui/material';
 import ExerciseCard from "./ExerciseCard";
-
 import {exerciseOptions,fetchData} from '../utils/fetchData';
 
 function Exercises({exercises, setExercises, bodyPart}) {
@@ -28,7 +27,7 @@ function Exercises({exercises, setExercises, bodyPart}) {
                     exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,exerciseOptions);
                 }
                 setExercises(exercisesData);
-            }
+            };
             fetchExercisesData();
         },[bodyPart]);
 
@@ -37,7 +36,7 @@ function Exercises({exercises, setExercises, bodyPart}) {
         <Box id='exercises'
         sx={{
             mt: { lg:'110px'}}}
-            mt='250px'
+            mt='50px'
             p='20px'
         >
             <Typography variant="h3" mb='46px'>
