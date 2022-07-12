@@ -1,6 +1,6 @@
 import React from "react";
 
-funciton ExerciseCard() {
+function ExerciseCard() {
     return(
         <div>
             Card component
