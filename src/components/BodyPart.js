@@ -9,7 +9,7 @@ function BodyPart({item, bodyPart, setBodyPart}) {
        sx={{
                 borderTop: bodyPart === item ? '4px solid #ff2625' : '',
                  backgroundColor: '#fff',
-                borderBottomLeftRadius: '20px',
+                borderBottomLeftRadius: '5px',
                 width: '270px',
                 heigth: '280px',
                 cursor: 'pointer', gap: '47px' 
