@@ -7,3 +7,5 @@ function HorizontalScrollbar() {
         </div>
     );
 }
+
+export default HorizontalScrollbar;
