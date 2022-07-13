@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from "react";
 import { useParams } from "react-router-dom";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 import {exerciseOptions, fetchData, youtubeOptions} from '../utils/fetchData';
 import Detail from "../components/Detail";
 import ExerciseVideos from '../components/ExerciseVideos';
@@ -22,8 +22,8 @@ function ExerciseDetail() {
             const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/exercise/${id}`,exerciseOptions);
             setExerciseDetail(exerciseDetailData);
 
-            const exerciseVideosData = await fetchData(`${youtubeSearchUrl}/search?q=${exerciseDetailData.name}`,youtubeOptions);
-            setExerciseVideos(exerciseVideosData);
+            const exerciseVideosData = await fetchData(`${youtubeSearchUrl}/search?query=${exerciseDetailData.name}`,youtubeOptions);
+            setExerciseVideos(exerciseVideosData.contents);
         }
         fetchExercisesData();
     },[id])
